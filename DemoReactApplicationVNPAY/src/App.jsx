@@ -2,33 +2,43 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import TravelCell from './components/TravelCell/TravelCell'
 
 function App() {
   const [count, setCount] = useState(0)
-//Bat dau code
+  const [listOfSession, setListOfSession] = useState([
+    {
+      session: "Sáng sớm",
+      time: "00:00 - 06:00"
+    },
+    {
+      session: "Buổi sáng",
+      time: "06:01 - 12:00"
+    },
+    {
+      session: "Buổi trưa",
+      time: "12:01 - 18:00"
+    },
+    {
+      session: "Buổi tối",
+      time: "18:01 - 23:59"
+    }])
+  
+    const onSelectSession = () => {
+      alert("Clicked")
+    }
+  //Bat dau code
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <TravelCell listOfSession = {listOfSession} onSelectSession = {onSelectSession}></TravelCell>
+      
+      {/* <div>Khoảng giá</div>
+      
+      
+      <div>Nhà xe</div>
+
+      <div>Loại xe</div> */}
+    </div>
   )
 }
 

@@ -1,0 +1,13 @@
+.travel-cell {
+    border-radius: 16px;
+    background-color: #00BFFF; /* Màu nền của ô view */
+    width: calc((100vw - 16px * 2) / 2 - 16px);
+    height: 100px; 
+    /* float:inline-start; */
+    padding: 16px;
+    box-sizing: border-box;
+}
+.travel-cell label {
+    display: block; /* Hiển thị label trên từng dòng */
+    margin-bottom: 10px; /* Khoảng cách giữa các label */
+  }

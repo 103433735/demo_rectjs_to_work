@@ -1,8 +1,10 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.App {
+  display: flex; /* Sử dụng flexbox */
+  flex-direction: column; /* Xếp các thành phần theo chiều dọc */
+  align-items: left; /* Căn giữa các thành phần theo trục ngang */
+  justify-content: left; /* Căn giữa các thành phần theo trục dọc */
+  height: 100vh; /* Chiều cao của component bằng 100% chiều cao của viewport */
+  padding: 20px; /* Khoảng cách phía trong của component */
 }
 
 .logo {
