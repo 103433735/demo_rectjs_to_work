@@ -6,7 +6,7 @@ const TravelCell = (props) => {
     }
     return (
         <div onclick={() => clickMe()}>
-        <div>Thời gian khởi hành</div>
+        <div className = "title-label">Thời gian khởi hành</div>
             <div style={{
                 flexWrap: "wrap",
                 display: "flex"

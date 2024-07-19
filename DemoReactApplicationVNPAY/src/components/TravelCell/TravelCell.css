@@ -6,8 +6,16 @@
     /* float:inline-start; */
     padding: 16px;
     box-sizing: border-box;
+    margin-bottom: 8px;
+    margin-right: 16px;
 }
 .travel-cell label {
     display: block; /* Hiển thị label trên từng dòng */
     margin-bottom: 10px; /* Khoảng cách giữa các label */
   }
+
+.title-label {
+    font-weight: bold;
+    padding-bottom: 16px;
+    margin-top: 16px;
+}
